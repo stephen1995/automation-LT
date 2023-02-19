@@ -1,85 +1,65 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/main/java/features/FillForm.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/main/java/features/Login.feature");
 formatter.feature({
-  "name": "TCG and GTP path",
+  "name": "Login",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Saved Card Success",
+  "name": "Login with standar user",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@pruebaDeJesus"
+      "name": "@SmokeTest"
     }
   ]
 });
 formatter.step({
-  "name": "The user has navigated to Flight search page",
+  "name": "user visits saucedemo page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "StepDefinitions.the_user_has_navigated_to_Flight_search_page()"
+  "location": "StepDefinitions.user_visits_saucedemo_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "selected an adult in economy class",
+  "name": "enters valid credentials",
   "keyword": "And "
 });
 formatter.match({
-  "location": "StepDefinitions.selected_an_adult_in_economy_class()"
+  "location": "StepDefinitions.enters_valid_credentials()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "fill From textfield",
+  "name": "user add the first item to the cart",
   "keyword": "And "
 });
 formatter.match({
-  "location": "StepDefinitions.and_fill_From_textfield()"
+  "location": "StepDefinitions.user_add_the_first_item_to_the_cart()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "fill To textfield",
-  "keyword": "And "
+  "name": "user completes checkout",
+  "keyword": "When "
 });
 formatter.match({
-  "location": "StepDefinitions.and_fill_To_textfield()"
+  "location": "StepDefinitions.user_completes_checkout()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "fill Departure",
-  "keyword": "And "
+  "name": "User is able to see Thank you for your order message",
+  "keyword": "Then "
 });
 formatter.match({
-  "location": "StepDefinitions.fill_Departure()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "fill Return",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinitions.fill_Return()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click on Search",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinitions.click_on_Search()"
+  "location": "StepDefinitions.user_is_able_to_see_Thank_you_for_your_order_message()"
 });
 formatter.result({
   "status": "passed"

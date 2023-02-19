@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 					monochrome = true,
 					dryRun = false,
 					plugin = {"pretty","html:target/POC"},
-					tags = "@pruebaDeJesus"
+					tags = "@SmokeTest"
 					//strict = true					
 					)
 
